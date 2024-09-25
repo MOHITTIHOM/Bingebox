@@ -26,3 +26,21 @@ A Prototype for Movie and TV Show Application: Developed a microservices-based a
 6. MongoDB
 7. RabbitMQ
 8. Docker
+
+#### Running Angular Frontend Client
+6. cd into Bingebox frontend folder
+   ```
+   cd frontend
+   ```
+7. run npm install in cmd
+   ```
+   npm install
+   ```
+8. run npm start 
+   ```
+   npm start
+   ```
+9. open http://localhost:4200 in any browser. If the movies don't load check the API response in the network.
+10. If Movies don't load, update the ApiKey
+11. If still it fails try using VPN. (API doesn't work properly in some countries)
+   
