@@ -11,7 +11,7 @@ import { map, Observable } from 'rxjs';
 
 
 export class MovieService {
-  private MyAPIKey: string = "";  // key expired, get your own key from https://www.themoviedb.org/settings/api
+  private MyAPIKey: string = "bcdeceac155749361eceaa88274a7aac";  // key expired, get your own key from https://www.themoviedb.org/settings/api
   
  constructor(private http: HttpClient,private router:Router) {}
   movieName:string | undefined;

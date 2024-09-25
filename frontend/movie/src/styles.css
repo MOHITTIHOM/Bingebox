@@ -1,33 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Ensure html and body take up the full height */
 html,
 body {
     height: 100%;
-}
-
-body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.gradient-custom {
-    /* fallback for old browsers */
-    /* background: #036370; */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to bottom right, rgb(64, 110, 131), rgb(89, 41, 74)); */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background: linear-gradient(to bottom right, rgb(9, 76, 84), rgb(157, 168, 114)); */
-    background: #221746;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom right, rgba(217, 215, 223, 0.89) rgb(45, 168, 245));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to bottom right, rgb(247, 75, 45), rgb(8, 36, 102))
+/* Apply the background image to the wrapper div */
+.background-wrapper {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: url('/assets/background.png') !important; /* Force the image */
+    background-size: cover !important; /* Ensure image covers full area */
+    background-repeat: no-repeat !important; /* Prevent repeating */
+    background-attachment: fixed !important; /* Fix background during scroll */
+    background-position: center !important; /* Center the image */
+    z-index: -1; /* Ensure it is behind other content */
 }
 
-.sidenav-container {
-    background: #221746;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom right, rgba(223, 235, 221, 0.89) rgb(45, 168, 245));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to bottom right, rgb(138, 51, 11), rgb(8, 36, 102))
+/* Reset body background if any */
+body {
+    background: none !important; /* Remove any existing background */
+}
+
+/* Ensure other elements don't use gradient classes by default */
+.gradient-custom, .sidenav-container {
+    background: none !important; /* Prevent gradient backgrounds globally */
+}
+
+/* Apply gradient to specific elements only where needed */
+.apply-gradient {
+    background: linear-gradient(to bottom right, rgb(247, 75, 45), rgb(8, 36, 102)) !important;
+}
+
+.sidenav-apply-gradient {
+    background: linear-gradient(to bottom right, rgb(138, 51, 11), rgb(8, 36, 102)) !important;
 }
