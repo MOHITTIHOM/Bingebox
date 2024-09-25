@@ -27,7 +27,7 @@ A Prototype for Movie and TV Show Application: Developed a microservices-based a
 7. RabbitMQ
 8. Docker
 
-#### Running Angular Frontend Client
+#### Running Frontend Client
 6. cd into Bingebox frontend folder
    ```
    cd frontend
@@ -43,4 +43,12 @@ A Prototype for Movie and TV Show Application: Developed a microservices-based a
 9. open http://localhost:4200 in any browser. If the movies don't load check the API response in the network.
 10. If Movies don't load, update the ApiKey
 11. If still it fails try using VPN. (API doesn't work properly in some countries)
+
+#### Running Backend
+12. Steps for Docker to be updated soon. Fixing issue in Docker-compose and Dockerfiles
+
+
+#### To Do:
+13. Recommendation system and trend analysis using ML.
+14. Notification System.
    
